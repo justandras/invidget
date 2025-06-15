@@ -42,7 +42,6 @@ export default class DiscordApi {
 
 	static getIconUrl(guildId: string, iconId: string, animation: boolean = true): string {
 		const ext = iconId.startsWith('a_') && animation ? '.gif' : '.png';
-		console.log(`${CDN_BASE_URL}/icons/${guildId}/${iconId}${ext}`);
 		return `${CDN_BASE_URL}/icons/${guildId}/${iconId}${ext}`;
 	}
 }
