@@ -12,8 +12,6 @@ export default class InviteResolver {
       return match[1];
     }
 
-    const match = query.match(inviteRegex);
-    if (!match) throw new Error("Invalid invite URL or code.");
-    return match[1];
+    return query;
   }
 }
