@@ -122,7 +122,7 @@ export default function LegacyTemplate({ invite, language = 'en', animation = tr
 								fontSize: SERVER_NAME_SIZE,
 								fill: themeColors.serverName,
 							}}
-							transform={`translate(0, ${SERVER_NAME_SIZE})`}
+							transform={`translate(${hasVerified || hasPartnered ? 20 : 0}, ${SERVER_NAME_SIZE})`}
 							font={WhitneySemibold}
 						/>
 
