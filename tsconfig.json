@@ -41,5 +41,4 @@
 		]
 	},
 	"exclude": ["test"],
-	"include": ["worker-configuration.d.ts", "src/**/*.ts", "src/components/InviteTemplate.tsx"]
 }

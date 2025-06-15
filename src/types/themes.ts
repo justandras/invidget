@@ -14,3 +14,20 @@ export type Theme = {
 export type Themes = {
   [key in ThemeVariation]: Theme;
 };
+
+export type LegacyThemeColors = {
+  background: string,
+  header: string,
+  serverIcon: string,
+  acronymText: string,
+  joinButtonBackground: string,
+  joinButtonText: string,
+  serverName: string,
+  online: string,
+  members: string,
+  presenceText: string,
+  badges: {
+    VERIFIED: { flowerStar: string, icon: string },
+    PARTNERED: { flowerStar: string, icon: string },
+  },
+};

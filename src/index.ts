@@ -34,9 +34,11 @@ export default {
 			...parseQuery(url.searchParams),
 		});*/
 
+		const query = parseQuery(url.searchParams)
+
 		const reactElement = React.createElement(LegacyTemplate, {
-			invite: await DiscordApi.getInvite(inviteCode),
-			...parseQuery(url.searchParams),
+			invite: await DiscordApi.getInvite(inviteCode, query.animation),
+			...query,
 		});
 
 		const svgString = renderToString(reactElement);
