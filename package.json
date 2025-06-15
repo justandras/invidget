@@ -1,7 +1,13 @@
 {
-	"name": "invidget-cloudflare-worker",
-	"version": "0.0.0",
-	"private": true,
+  "name": "invidget",
+  "version": "2.0.0",
+  "description": "SVG invite widgets that look just like the ones on the Discord client!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SwitchbladeBot/invidget.git"
+  },
+  "author": "Switchblade Team",
+  "license": "MIT",
 	"scripts": {
 		"deploy": "wrangler deploy",
 		"dev": "wrangler dev",
